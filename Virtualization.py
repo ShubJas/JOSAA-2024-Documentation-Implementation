@@ -87,7 +87,9 @@ def determine_virtual_state_quota(row):
     if row['InstQuota'] == 'AI':
         return ['AI']
     
-    if row['StateCode'] in row['HomeState'].split(','):
+    state_codes = [code.strip() for code in row['StateCode'].split(',') if code.strip()]
+    
+    if pd.notna(row['HomeState']) and any(state in row['HomeState'].split(',') for state in state_codes):
         if row['InstQuota'] == 'OH':
             return ['HS']
         elif row['InstQuota'] == 'AH':
@@ -139,8 +141,3 @@ merged_df = merged_df[reordered_columns]
 merged_df.to_csv(r'C:\Users\student\Desktop\JOSAA\data\Round1-20240508T102918Z-001\Round1\Virtualized_Choices.csv', index=False)
 
 print(f"Time taken for Virtualization: {time.time()- end_time_loading_merging:.2f} seconds")
-
-
-
-
-
