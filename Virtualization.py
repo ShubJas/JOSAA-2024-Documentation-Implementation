@@ -65,22 +65,46 @@ def determine_virtual_gender(row):
         return []
 
 
+# def determine_virtual_state_quota(row):
+#     if row['InstQuota'] == 'AI':
+#         return ['AI']
+#     elif row['InstQuota'] == 'OH':
+#         if row['StateCode'] in row['HomeState'].split(','):
+#             return ['HS']
+#         else:
+#             return ['OS']
+#     elif row['InstQuota'] == 'AH':
+#         if row['StateCode'] in row['HomeState'].split(','):
+#             return ['AI','HS']
+#         else:
+#             return ['AI']
+#     else:
+#         print(f"Unknown virtual state for candidate with RollNo {row['RollNo']}")
+#         return []
+    
+# More efficient version of determine_virtual_state_quota
 def determine_virtual_state_quota(row):
     if row['InstQuota'] == 'AI':
         return ['AI']
-    elif row['InstQuota'] == 'OH':
-        if row['StateCode'] in row['HomeState'].split(','):
+    
+    if row['StateCode'] in row['HomeState'].split(','):
+        if row['InstQuota'] == 'OH':
             return ['HS']
+        elif row['InstQuota'] == 'AH':
+            return ['AI', 'HS']
         else:
-            return ['OS']
-    elif row['InstQuota'] == 'AH':
-        if row['StateCode'] in row['HomeState'].split(','):
-            return ['AI','HS']
-        else:
-            return ['AI']
+            print(f"Unknown virtual state for candidate with RollNo {row['RollNo']}")
+            return []
     else:
-        print(f"Unknown virtual state for candidate with RollNo {row['RollNo']}")
-        return []
+        if row['InstQuota'] == 'OH':
+            return ['OS']
+        elif row['InstQuota'] == 'AH':
+            return ['AI']
+        else:
+            print(f"Unknown virtual state for candidate with RollNo {row['RollNo']}")
+            return []
+    
+    
     
 
 # Apply the functions to generate virtual categories, sub-categories, and genders
