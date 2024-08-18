@@ -75,7 +75,7 @@ For the CSAB special rounds, follow this sequence:
 
 ## Data Schema
 
-For detailed information on the data schema, please refer to the [DATA-SCHEMA](link).
+For detailed information on the data schema, please refer to the [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
 
 ## Support
