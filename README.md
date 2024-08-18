@@ -31,7 +31,7 @@ Before you begin, ensure the following are installed on your system:
 
 - **Code**: All source code is located in the `codes` directory. This directory contains subfolders for each round, holding the relevant Jupyter notebooks.
 
-- **Data**: The data for the year 2024, organized round-wise, is stored in the `JoSAA_CSAB_2024` directory. Ensure to reference this directory when setting source paths in the notebooks.
+- **Data**: The data for the year 2024, organized round-wise, is stored in the `JoSAA_CSAB_2024` directory. Ensure to reference this directory when setting source paths in the notebooks. For undestand schema refer [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
 ## General Setup
 
@@ -45,7 +45,7 @@ Before you begin, ensure the following are installed on your system:
 
 Follow the steps below based on the round type you are processing:
 
-### JoSAA Rounds (Rounds 1 to 6)
+### JoSAA Rounds (Rounds 1 to 5)
 
 Run the following Jupyter notebooks in the order specified to process the JoSAA rounds:
 
