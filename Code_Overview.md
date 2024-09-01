@@ -53,7 +53,7 @@ Represents a program with specific attributes and operations related to candidat
 
 ### Class: `Candidate`
 
-Represents a candidate with various ranks across different categories and preparation modes.
+Represents a candidate with various ranks across different categories and his choice list.
 
 ---
 
