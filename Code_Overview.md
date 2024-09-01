@@ -41,7 +41,7 @@ This file contains the implementation of the Core Deferred Acceptance Algorithm 
 ### `Seats.csv`
 
 - **Description**: This file provides information about available programs, including their codes, quotas, categories, subcategories, gender classifications, and total capacities.
-- **Source**: This file is provided by the National Clearinghouse Institute (NCI).
+- **Source**: This file is provided by the NIC.
 - **Purpose**: It is used to create `Program` objects, which include details about each program's availability and capacity, essential for managing the admission process.
 
 
