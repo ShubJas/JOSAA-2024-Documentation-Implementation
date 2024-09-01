@@ -33,6 +33,15 @@ Before you begin, ensure the following are installed on your system:
 
 - **Data**: The data for the year 2024, organized round-wise, is stored in the `JoSAA_CSAB_2024` directory. Ensure to reference this directory when setting source paths in the notebooks. For undestand schema refer [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
+## Notebooks Overview
+
+For a detailed explanation of the sequence of notebooks used in the JoSAA allocation process, including the inputs, outputs, and the purpose of each notebook across different rounds, please refer to the [IO.md](./IO.md) file.
+
+The `IO.md` file provides an in-depth overview of the workflow for each round, including the special rounds like CSAB and NEUT. It describes the expected inputs and generated outputs for each notebook, as well as the specific role each notebook plays in the allocation process. This documentation is essential for understanding the execution flow and ensuring that each step is performed correctly.
+
+Make sure to consult the `IO.md` file before running the notebooks to avoid any discrepancies and to better understand the overall process.
+
+
 ## General Setup
 
 1. **Open the Round Folder**:
