@@ -74,16 +74,16 @@ For the CSAB special rounds, follow this sequence:
 - The sequence of running the notebooks is crucial. Do not alter the order unless you are familiar with the process dependencies.
 
 ## Data Schema
+For detailed information on the data schema, please refer to the [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
+
+## Requirements
 You can install all the required Python packages using the following command:
 
 ```
 pip install -r requirements.txt
 ```
 
-## Requirements
-
-For detailed information on the data schema, please refer to the [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
 
 ## Support
