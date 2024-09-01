@@ -21,3 +21,26 @@ The goal of the `merit_extended.py` code is to integrate these preparatory candi
    - After extending the ranks, the updated DataFrame, which now includes the preparatory candidates integrated into the main merit list, is saved to a new CSV file.
 
 This process ensures that preparatory candidates are appropriately ranked in the main merit list, reflecting their eligibility and extending their consideration for admission based on their preparatory ranks.
+
+
+
+## Overview of `allocationReader.py`
+
+This file contains the implementation of the Core Data Allocation (DA) algorithm responsible for the allocation process. It handles the logic for distributing candidates based on their ranks and preferences, and generates the `Extended_merit_list1.csv` file as output, which includes detailed candidate information for further processing.
+
+
+# Reading the Input Data
+
+## `Extended_merit_list1.csv`
+
+- **Description**: This file contains detailed information about candidates. It includes ranks across various categories and preparation modes, as well as flags indicating specific attributes of the candidates.
+- **Source**: This file is generated as the output of the `merit_extended.py` script.
+- **Purpose**: It is used to create `Candidate` objects with comprehensive rank data for processing and admission decisions.
+
+## `Seats.csv`
+
+- **Description**: This file provides information about available programs, including their codes, quotas, categories, subcategories, gender classifications, and total capacities.
+- **Source**: This file is provided by the National Clearinghouse Institute (NCI).
+- **Purpose**: It is used to create `Program` objects, which include details about each program's availability and capacity, essential for managing the admission process.
+
+
