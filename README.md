@@ -36,7 +36,7 @@ Before you begin, ensure the following are installed on your system:
 ## General Setup
 
 1. **Open the Round Folder**:
-   - Navigate to the specific round folder within the `codes` directory for which you want to run the allocation system. Each round folder contains the necessary data files and Jupyter notebooks.
+   - Navigate to the specific round folder for which you want to run the allocation system. Each round folder contains the necessary data files and Jupyter notebooks.
 
 2. **Change Source Paths**:
    - Inside the Jupyter notebooks, update the paths to the source data files. These paths are typically defined at the beginning of each notebook. Ensure that they point to the correct file locations on your system.
