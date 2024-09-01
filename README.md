@@ -58,7 +58,7 @@ Run the following Jupyter notebooks in the order specified to process the JoSAA 
 3. **allocationReader.ipynb**:
    - Reads and finalizes the allocation results, applying the logic defined for seat allocation and constraints.
 
-### CSAB Special Rounds (Rounds 7 and 8)
+### CSAB Special Rounds 
 
 For the CSAB special rounds, follow this sequence:
 
