@@ -1,6 +1,6 @@
 # Seat Allocation System: Setup and Execution Guide
 
-This guide provides detailed instructions for setting up and running the seat allocation system for JoSAA and CSAB special rounds. 
+This guide provides detailed instructions for setting up and running the seat allocation system for JoSAA, CSAB special Rounds, NEUT and Supernumerary Rounds. 
 
 ### Fork and Clone the JOSAA-2024-Implementation repo
 
