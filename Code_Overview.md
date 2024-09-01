@@ -32,32 +32,32 @@ This file contains the implementation of the Core Data Allocation (DA) algorithm
 
 ## Reading the Input Data
 
-## `Extended_merit_list1.csv`
+### `Extended_merit_list1.csv`
 
 - **Description**: This file contains detailed information about candidates. It includes ranks across various categories and preparation modes, as well as flags indicating specific attributes of the candidates.
 - **Source**: This file is generated as the output of the `merit_extended.py` script.
 - **Purpose**: It is used to create `Candidate` objects with comprehensive rank data for processing and admission decisions.
 
-## `Seats.csv`
+### `Seats.csv`
 
 - **Description**: This file provides information about available programs, including their codes, quotas, categories, subcategories, gender classifications, and total capacities.
 - **Source**: This file is provided by the National Clearinghouse Institute (NCI).
 - **Purpose**: It is used to create `Program` objects, which include details about each program's availability and capacity, essential for managing the admission process.
 
 
-## Class: `Program`
+### Class: `Program`
 
 Represents a program with specific attributes and operations related to candidates and quotas.
 
 ---
 
-## Class: `Candidate`
+### Class: `Candidate`
 
 Represents a candidate with various ranks across different categories and preparation modes.
 
 ---
 
-### Methods:
+## Methods:
 
 - **`__init__(...)`**
   - **Purpose**: Initializes a new `Candidate` object with various ranks and attributes and flags.
