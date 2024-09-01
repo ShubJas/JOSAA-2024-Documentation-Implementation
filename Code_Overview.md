@@ -23,13 +23,14 @@ The goal of the `merit_extended.py` code is to integrate these preparatory candi
 This process ensures that preparatory candidates are appropriately ranked in the main merit list, reflecting their eligibility and extending their consideration for admission based on their preparatory ranks.
 
 
+---
 
 ## Overview of `allocationReader.py`
 
 This file contains the implementation of the Core Data Allocation (DA) algorithm responsible for the allocation process. It handles the logic for distributing candidates based on their ranks and preferences, and generates the `Extended_merit_list1.csv` file as output, which includes detailed candidate information for further processing.
 
 
-# Reading the Input Data
+## Reading the Input Data
 
 ## `Extended_merit_list1.csv`
 
@@ -42,5 +43,38 @@ This file contains the implementation of the Core Data Allocation (DA) algorithm
 - **Description**: This file provides information about available programs, including their codes, quotas, categories, subcategories, gender classifications, and total capacities.
 - **Source**: This file is provided by the National Clearinghouse Institute (NCI).
 - **Purpose**: It is used to create `Program` objects, which include details about each program's availability and capacity, essential for managing the admission process.
+
+
+## Class: `Program`
+
+Represents a program with specific attributes and operations related to candidates and quotas.
+
+---
+
+## Class: `Candidate`
+
+Represents a candidate with various ranks across different categories and preparation modes.
+
+---
+
+### Methods:
+
+- **`__init__(...)`**
+  - **Purpose**: Initializes a new `Candidate` object with various ranks and attributes and flags.
+
+- **`is_eligible(rk)`**
+  - **Purpose**: Checks if a candidate is eligible based on their rank (`rk`) and the current round number. If the round number is 1, all candidates are considered eligible. For other rounds, eligibility is determined by comparing the candidate's rank with the minimum cutoff.
+
+- **`add_candidate(rk, roll_no)`**
+  - **Purpose**: Adds a candidate to the waitlist if their rank (`rk`) is greater than 0. Candidates are stored in a max-heap where higher ranks are prioritized.
+
+- **`remove_least_preferred()`**
+  - **Purpose**: Removes and returns the candidate with the least preferred rank (i.e., the highest rank number) from the waitlist.
+
+
+
+
+
+
 
 
