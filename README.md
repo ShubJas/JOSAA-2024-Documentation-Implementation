@@ -75,6 +75,14 @@ For the CSAB special rounds, follow this sequence:
 
 ## Data Schema
 
+You can install all the required Python packages using the following command:
+
+```
+pip install -r requirements.txt
+```
+
+## Requirements
+
 For detailed information on the data schema, please refer to the [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
 
