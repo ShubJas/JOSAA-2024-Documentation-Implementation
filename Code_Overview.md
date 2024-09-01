@@ -27,7 +27,7 @@ This process ensures that preparatory candidates are appropriately ranked in the
 
 ## Overview of `allocationReader.py`
 
-This file contains the implementation of the Core Deferred Acceptance Algorithm (DA) algorithm responsible for the allocation process. It handles the logic for distributing candidates based on their ranks and preferences, and generates the `Extended_merit_list1.csv` file as output, which includes detailed candidate information for further processing.
+This file contains the implementation of the Core Deferred Acceptance Algorithm (DA) algorithm responsible for the allocation process. It handles the logic for distributing candidates based on their ranks and preferences.
 
 
 ## Reading the Input Data
