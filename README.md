@@ -88,6 +88,32 @@ For the CSAB special rounds, follow this sequence:
 2. **allocationReader.ipynb**:
    - Finalizes the allocation for CSAB special rounds, focusing on handling the unique rules and constraints applicable to these rounds.
 
+### CSAB NEUT
+
+For the CSAB NEUT, follow this sequence:
+
+1. **virtualization_cs_cons.ipynb**:
+   - Similar to the earlier rounds, this notebook handles the virtualization required for the CSAB NEUT rounds except for Andaman & Nicobar Islands.
+
+2. **reader.ipynb**:
+   - Finalizes the allocation for CSAB NEUT rounds, focusing on handling the unique rules and constraints applicable to these rounds except for Andaman & Nicobar Islands.
+
+3. **AN_virtualization.ipynb**:
+   - This notebook handles the virtualization required for the CSAB NEUT rounds but only for Andaman & Nicobar Islands.
+
+4. **AN_reader.ipynb**:
+   - Finalizes the allocation for CSAB NEUT rounds only for Andaman & Nicobar Islands, focusing on handling the unique rules and constraints applicable to these rounds.
+
+### CSAB Supernumerary
+
+For the CSAB Supernumerary, follow this sequence:
+
+1. **virtualization.ipynb**:
+   - This notebook handles the virtualization required for the round.
+
+2. **allocationReader.ipynb**:
+   - Finalizes the allocation for CSAB Supernumerary round, focusing on handling the unique rules and constraints applicable to these round.
+
 ## Additional Notes
 
 - Ensure that you check the outputs of each notebook for errors or warnings that might need attention.
