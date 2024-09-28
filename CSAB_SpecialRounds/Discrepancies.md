@@ -4,7 +4,7 @@ This document explains the discrepancies encountered during the CSAB Special Rou
 
 ### Background
 
-According to the established business rules from previous years, a candidate who confirmed a seat in the JoSAA allocation must retain that seat if they participate in the CSAB Special Round unless they are allocated a more preferred seat during the Special Round. This rule ensures that candidates will not lose their previously confirmed seat unless they are upgraded to a better one.
+According to the established business rules, a candidate who confirmed a seat in the JoSAA allocation must retain that seat if they participate in the CSAB Special Round unless they are allocated a more preferred seat during the Special Round. This rule ensures that candidates will not lose their previously confirmed seat unless they are upgraded to a better one.
 
 To ensure compliance with this rule, during the CSAB Special Round, the candidate's confirmed JoSAA seat is appended to their new CSAB choice list if they were previously allocated a seat in JoSAA.
 
