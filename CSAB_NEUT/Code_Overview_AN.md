@@ -67,7 +67,7 @@ Represents a candidate with various ranks across different categories and his ch
    - This is a utility function responsible for getting the required type of rank based on the program.
 
 - **`prioritizer()`**
-   - This function is the function that gives the priorty to different candidates while allotting them seats by incresinf the rank of all the category-2 students by 10000000.
+   - This function is the function that gives the priorty to different candidates while allotting them seats by increasing the rank of all the category-2 students by 10000000.
 
 - **`remove_candidate_with_roll_number(waitlist, roll_number)`**
    - This is the method responsible for removing the candidate with the given roll number from the waitlists. This is mainly called in the allocator functions.
