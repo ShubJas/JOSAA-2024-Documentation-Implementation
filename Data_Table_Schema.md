@@ -1,7 +1,7 @@
 # Table Schemas Documentation
 
 ## Introduction
-This document provides detailed documentation of the table schemas used in Round 1 of our project. Each table is listed with its corresponding columns and a brief description.
+This document provides detailed documentation of the table schemas used in JoSAA/CSAB project. Each table is listed with its corresponding columns and a brief description.
 
 ## Table Documentation Overview
 
@@ -9,7 +9,7 @@ This document provides detailed documentation of the table schemas used in Round
 The tables used in Round 1 are also used in all subsequent rounds. Each round builds upon the previous rounds by adding additional tables to capture more detailed information relevant to the allotment process.
 
 ### Tables Used in All Rounds
-The following tables from Round 1 are utilized in all subsequent rounds:
+The following tables are common across all rounds:
 
 1. **allotment_NIC.csv**
 2. **Candidates.csv**
@@ -38,7 +38,7 @@ The following tables from Round 1 are utilized in all subsequent rounds:
 Each round's additional tables provide extended data and insights, building on the foundational tables used in Round 1. This approach ensures a comprehensive view of allotments and candidate details throughout the entire process.
 
 
-## Table Schemas For Round_1 Allotment
+## Table Schemas For the common tables in all rounds
 ### 1. **allotment_NIC.csv**
    - **Description**: Stores allotment details for each candidate, including the round of allotment, candidate details, and the specific seat allotted.
    - **Columns**:
