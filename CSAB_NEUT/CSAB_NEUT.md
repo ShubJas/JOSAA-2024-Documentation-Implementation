@@ -1,10 +1,7 @@
-# NEUT Seat Allocation System
+# Candidate Allocation System
 
-The **NEUT Seat Allocation System** is designed for the seat allocation process involving candidates from the North East and Union Territories (NEUT) of India. This system facilitates the allocation of seats in various educational programs based on candidates' ranks, categories, and preferences.
+This project implements a candidate allocation system for academic programs. It includes classes and methods to handle candidate and program data, manage allocations based on ranks and choices, and verify the correctness of allocations.
 
-### About NEUT
-- **Participating Regions:** The NEUT Seat Allocation System includes candidates from eight North Eastern states (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, and Tripura), 5 Union Territories of India (Andaman & Nicobar Islands, Daman & Diu, Dadar & Nagar Haveli, Lakshadweep, Ladakh) and NERIST, Itanagar.
-- **Eligibility:** Candidates from these regions are eligible to participate in the NEUT Seat Allocation System, provided they meet the required criteria set by their respective boards and institutions.
 ## Classes and Methods Overview
 
 ### 1. **Class `Program`**
