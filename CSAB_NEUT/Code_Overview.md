@@ -1,6 +1,6 @@
-# Candidate Allocation System
+# NEUT Seat Allocation System
 
-This project implements a candidate allocation system for academic programs. It includes classes and methods to handle candidate and program data, manage allocations based on ranks and choices, and verify the correctness of allocations.
+This explains the classes and methods to handle candidate and program data, manage NEUT allocations based on ranks and choices, and verify the correctness of allocations.
 
 ## Classes and Methods Overview
 
