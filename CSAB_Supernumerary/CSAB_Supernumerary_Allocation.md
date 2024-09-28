@@ -27,17 +27,6 @@ This section defines the paths to various CSV files used in the data processing 
 - `path_output`: Path for the output file of allotments.
 - `path_error`: Path for the output file of unalloted candidates.
 
-### Code:
-    
-    path_candidates = '/home/it/Desktop/RUN/Official/Source/CSAB_SuperNumerary/Candidates.csv'
-    path_seats = '/home/it/Desktop/RUN/Official/Source/CSAB_SuperNumerary/Seats.csv'
-    # path_seatsFor = '/home/it/Desktop/RUN/Official/Source/CSAB_SuperNumerary/Seats_Foreign.csv'
-    path_normChoices = '/home/it/Desktop/RUN/Official/CSAB_SuperNumerary/Normal_Virtualized_Choices.csv'
-    path_dsChoices = '/home/it/Desktop/RUN/Official/CSAB_SuperNumerary/DS_Virtualized_Choices.csv'
-    path_choices = '/home/it/Desktop/RUN/Official/Source/CSAB_SuperNumerary/Choice.csv'
-    path_allotment = '/home/it/Desktop/RUN/Official/Source/CSAB_SuperNumerary/Allotment_NIC.csv'
-    path_output = 'allotment_NITK.csv'
-    path_error = 'allotment_NITK_unalloted.csv'
 
 ## Code Snippet 3: Data Classes and Loading Functions
 
@@ -150,8 +139,6 @@ This function loads program data from a CSV file into a dictionary of `Program` 
 - A dictionary where the key is a tuple `(inst_code, brcode, quota, cat, subcat, gender, 0)` and the value is an instance of the `Program` class.
 
 #### Code:
-
-    
     def load_programs(filename):
         df = pd.read_csv(filename)
         return {(row['InstCd'], row['BrCd'], row['Quota'], row['Cat'], row['SubCat'], row['Gender'], 0): Program(row['InstCd'], row['BrCd'], row['Quota'], row['Cat'], row['SubCat'], row['Gender'], row['TSeat'], 0) for index, row in df.iterrows()}
