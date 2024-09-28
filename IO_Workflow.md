@@ -44,6 +44,17 @@ The process for NEUT is similar, with slight modifications to the inputs and out
 | **AN_reader.ipynb**      | AN_Virtualized_Choices.csv, R1_App_Seats.csv, R1_App_RankDetail.csv, R1_App_CandidateProfile.csv, R1_App_QualificationMarksDetail.csv, CSAB_NITK_AndamanIPSeat_new.csv, CSAB_NITK_AndamanPSeat_new.csv       | AN_Final_allocationsLinear.csv | Performs allotment for NEUT Andaman only round 1.                            |
 | **AN_virtualization.ipynb**      | R1_App_CandidateProfile.csv, R1_App_Choice.csv        | AN_Virtualized_Choices.csv | Virtualizes the choices for the respective round.                          |
 
+## CSAB Supernumerary: Notebooks Overview
+
+The process for Supernumerary Round is similar, with slight modifications to the inputs and outputs to accommodate the progressing round.
+
+| Notebook Name                | Inputs                                        | Outputs                              | Description                                                                 |
+|------------------------------|-----------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------|
+| **virtualization.ipynb**      | filtered_candidates.csv, Choice.csv, Seats.csv, Institutes.csv         | Normal_Virtualized_Choices.csv | Virtualizes the choices for the respective round.                            |
+| **allocationReader.ipynb**    | Candidates.csv, Normal_Virtualized_Choices_Rx.csv, Seats.csv, Allotment_NIC.csv  | allotment_NITK_unalloted.csv, allotment_NITK.csv  | Performs allocation for the respective round.                                  |
+| **mismatches.ipynb**          | Allotment_NIC.csv, allotment_NITK.csv | mismatched_allocations_analysis.txt | Analyzes mismatches between allotments and final allocations for the round. |
+
+
 ## Workflow Summary
 
 ### Round 1
@@ -97,6 +108,16 @@ The process for NEUT is similar, with slight modifications to the inputs and out
 
 5. **AN_virtualization.ipynb**:
    - Virtualizes choices only for Andaman & Nicobar Islands.
+
+### CSAB Supernumerary
+1. **virtualization**:
+   - Virtualizes choices for the round.
+
+2. **allocationReader.ipynb**
+   - Allocates seats for the round.
+   
+3. **mismatches.ipynb**
+   - Analyzes mismatches for respective round.
    
 ## Notes
 - Ensure input files are placed in the correct directories before running each notebook.
