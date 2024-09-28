@@ -33,7 +33,7 @@ Before you begin, ensure the following are installed on your system:
 
 ### Folder Structure:
 - **JoSAA_Round1**: This folder contains the files for JoSAA Round 1.
-- **JoSAA_Round2+**: This folder holds the files for JoSAA Rounds 2 through 5.
+- **JoSAA_Round2+**: This folder holds the files for JoSAA Rounds 2 to 5.
 - **CSAB_NEUT**: This folder contains all files related to the CSAB NEUT rounds.
 - **CSAB_Supernumerary**: This folder contains all files for handling the CSAB Supernumerary rounds.
 - **CSAB_SpecialRounds**: This folder contains all files for handling the CSAB Special rounds.
@@ -41,8 +41,7 @@ Before you begin, ensure the following are installed on your system:
 
 Each of these folders contains the code necessary to process the respective rounds and a `Code_Overview.md` file to help understand the workflow and logic behind the notebooks.
 
-s
-- **Data**: Due to the confidentiality of the data, we have not provided the data in this repository, the data is stored in the database, if u are authorized, you can get access. While storing the data, make sure to save the data in order and in seperate folders. The data should be organized round-wise and stored in their respective directories. Ensure to reference the proper directory when setting source paths in the notebooks. For undestand schema refer [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
+- **Data**: Due to the confidentiality of the data, we have not provided the data in this repository, the data is stored in the database, if you are authorized, you can get access. While storing the data, make sure to save the data in order and in seperate folders. The data should be organized round-wise and stored in their respective directories. Ensure to reference the proper directory when setting source paths in the notebooks. To undestand the schema refer [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
 ## Notebooks Overview
 
