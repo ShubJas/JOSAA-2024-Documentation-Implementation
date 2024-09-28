@@ -72,7 +72,7 @@ The process for NEUT is similar, with slight modifications to the inputs and out
 4. **mismatches.ipynb**:
    - Analyzes mismatches for each respective round.
 
-### CSAB SPECIAL ROUNDS
+### CSAB Special Rounds
 1. **virtualization_csX.ipynb**:
    - Virtualizes choices for each round.
 
@@ -82,7 +82,7 @@ The process for NEUT is similar, with slight modifications to the inputs and out
 3. **mismatches.ipynb**
    - Analyzes mismatches for each respective round.
 
-### CSAB NEUT
+### CSAB NEUT Rounds
 1. **virtualization_cs_cons.ipynb**:
    - Virtualizes choices for each round.
 
