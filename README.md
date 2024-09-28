@@ -29,7 +29,7 @@ Before you begin, ensure the following are installed on your system:
 
 ## Code and Data Organization
 
-- **Codes and code overviews**: All source codes and code explinations are located in the respective folders. There are folders for each round, holding the relevant Jupyter notebooks and md files for explainations.
+- **Codes and code overviews**: All source codes and code explainations are located in the respective folders. There are folders for each round, holding the relevant Jupyter notebooks and md files for explainations.
 
 - **Data**: Due to the confidentiality of the data, we have not provided the data in this repository, the data is stored in the database, if u are authorized you can get access. While storing the data, make sure to save the data in order and in seperate folders. The data should be organized round-wise and stored in their respective directories. Ensure to reference the proper directory when setting source paths in the notebooks. For undestand schema refer [DATA-SCHEMA](https://github.com/ShubJas/JOSAA-2024-Implementation/blob/main/Data_Table_Schema.md).
 
