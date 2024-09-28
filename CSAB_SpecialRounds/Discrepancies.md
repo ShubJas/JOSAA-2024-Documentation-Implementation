@@ -1,4 +1,4 @@
-# Seat Allocation System: Discrepancies Due to Changes in `choices.csv` and `choices_NIC.csv`
+#  Discrepancies Due to Changes in `choices.csv` and `choices_NIC.csv`
 
 This document explains the discrepancies encountered during the CSAB Special Rounds allocation process due to variations between `choices.csv` and `choices_NIC.csv`, and the steps taken to resolve these issues.
 
