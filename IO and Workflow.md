@@ -72,6 +72,32 @@ The process for NEUT is similar, with slight modifications to the inputs and out
 4. **mismatches.ipynb**:
    - Analyzes mismatches for each respective round.
 
+### CSAB SPECIAL ROUNDS
+1. **virtualization_csX.ipynb**:
+   -Virtualizes choices for each round.
+
+2. **allocationReader_csX.ipynb**
+   -Allocates seats for each round.
+   
+3. **mismatches.ipynb**
+   -Analyzes mismatches for each respective round.
+
+### CSAB NEUT
+1. **virtualization_cs_cons.ipynb**:
+   -Virtualizes choices for each round.
+
+2. **reader.ipynb**:
+   -Allocates seats for each round.
+   
+3. **mismatches.ipynb**:
+   -Analyzes mismatches for each respective round.
+
+4. **AN_reader.ipynb**:
+   -Allocates seats only for Andaman & Nicobar Islands .
+
+5. **AN_virtualization.ipynb**:
+   - Virtualizes choices only for Andaman & Nicobar Islands.
+   
 ## Notes
 - Ensure input files are placed in the correct directories before running each notebook.
 - The output files will be generated in the same directories as the respective notebooks.
