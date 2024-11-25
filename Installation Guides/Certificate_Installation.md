@@ -1,100 +1,102 @@
-# Guide for Certificate Installation and Approval in SQL Server Management Studio (SSMS)
+# Installation and Configuration Guide for NIC VPN Client on Windows
 
-This document outlines the steps for installing and approving a certificate in **SQL Server Management Studio (SSMS)** to enable secure communication with SQL Server instances.
-
----
-
-## Step 1: Obtain a Certificate
-
-1. Acquire a valid SSL/TLS certificate from a trusted Certificate Authority (CA).
-   - Alternatively, you can use a self-signed certificate for development purposes.
-2. Ensure the certificate meets the following requirements:
-   - Issued to the fully qualified domain name (FQDN) of the SQL Server.
-   - Key usage includes server authentication.
-   - Exported in `.pfx` format with a private key.
+This guide provides step-by-step instructions for installing and configuring the NIC VPN client on Windows 8 and Windows 10. For more details, refer to the official [Manual for Configuring VPN Client in Windows 8 & 10](https://vpn.nic.in/resources/manuals/Manual%20for%20Configuring%20VPN%20Client%20in%20Windows%208%20&%2010.pdf).
 
 ---
 
-## Step 2: Install the Certificate on the Server
+## Step 1: Prerequisites
 
-1. Log in to the server hosting the SQL Server instance.
-2. Open the **Microsoft Management Console (MMC)**:
-   - Press `Win + R`, type `mmc`, and press Enter.
-3. Add the **Certificates** snap-in:
-   - Go to **File** → **Add/Remove Snap-in**.
-   - Select **Certificates** and click **Add**.
-   - Choose **Computer Account** and click **Next** → **Finish**.
-4. Install the certificate:
-   - Expand **Certificates (Local Computer)** → **Personal** → **Certificates**.
-   - Right-click and select **All Tasks** → **Import**.
-   - Follow the wizard to import your `.pfx` certificate file.
-   - Ensure the certificate is successfully added under **Personal** → **Certificates**.
+1. Ensure you have the following:
+   - A valid VPN username and password provided by NIC.
+   - The VPN server address.
+   - Administrative privileges on your computer.
+
+2. Ensure your system is connected to the internet.
 
 ---
 
-## Step 3: Configure SQL Server to Use the Certificate
+## Step 2: Install NIC VPN Client
 
-1. Open **SQL Server Configuration Manager**.
-2. Navigate to **SQL Server Network Configuration** → **Protocols for [Your SQL Server Instance]**.
-3. Right-click **Properties** on the protocol **TCP/IP**:
-   - Enable TCP/IP if not already enabled.
-4. Assign the certificate:
-   - Go to **SQL Server Network Configuration** → **SQL Server Protocols** → **Properties**.
-   - Under the **Certificate** tab, select the installed certificate from the list.
-   - Confirm and save changes.
+1. Download the NIC VPN Client from the official VPN portal:
+   - Visit [NIC VPN Resources](https://vpn.nic.in/resources/).
+   - Select the appropriate VPN client version for your operating system.
 
----
-
-## Step 4: Enforce SSL Encryption (Optional)
-
-1. Open **SQL Server Configuration Manager**.
-2. Go to **SQL Server Network Configuration** → **Protocols for [Your SQL Server Instance]**.
-3. Under the **Flags** tab, set **Force Encryption** to **Yes**.
+2. Run the downloaded installer:
+   - Double-click the installer file.
+   - Follow the on-screen instructions to complete the installation.
 
 ---
 
-## Step 5: Restart the SQL Server Instance
+## Step 3: Configure the VPN Connection
 
-1. Open **SQL Server Configuration Manager**.
-2. Select **SQL Server Services**.
-3. Right-click your SQL Server instance and choose **Restart**.
+### 3.1 Open the VPN Settings
+
+1. Press `Win + I` to open **Settings**.
+2. Navigate to **Network & Internet** → **VPN**.
+
+### 3.2 Add a VPN Connection
+
+1. Click on **Add a VPN connection**.
+2. Fill in the following details:
+   - **VPN Provider**: Select **Windows (built-in)**.
+   - **Connection Name**: Enter a name (e.g., NIC VPN).
+   - **Server Name or Address**: Enter the VPN server address provided by NIC.
+   - **VPN Type**: Select **L2TP/IPSec with pre-shared key**.
+   - **Pre-shared Key**: Enter the key provided by NIC.
+   - **Type of Sign-in Info**: Select **Username and Password**.
+
+3. Click **Save**.
 
 ---
 
-## Step 6: Verify Certificate Approval in SSMS
+## Step 4: Connect to the VPN
 
-1. Launch **SQL Server Management Studio** (SSMS).
-2. Connect to your SQL Server instance using **FQDN** (e.g., `servername.domain.com`).
-3. Under **Object Explorer**, navigate to **Server Properties**:
-   - Right-click the server and select **Properties**.
-   - Go to the **Security** tab and ensure **Encrypt connection** is enabled.
-4. Test the connection:
-   - Verify that the connection is encrypted by checking the connection properties.
-   - Look for the `Encrypt` property set to `True`.
+1. In the VPN settings window, select the newly created connection (e.g., NIC VPN).
+2. Click **Connect**.
+3. Enter your username and password provided by NIC.
+4. Click **OK** to establish the connection.
+
+---
+
+## Step 5: Verify the VPN Connection
+
+1. Once connected, verify the VPN status:
+   - Open **Network & Internet Settings** → **VPN**.
+   - Ensure the connection status shows as **Connected**.
+
+2. Check your IP address to confirm that your traffic is routed through the VPN:
+   - Visit an IP address checking website (e.g., [WhatIsMyIP](https://whatismyipaddress.com/)).
+   - The displayed IP should match the NIC-provided IP range.
 
 ---
 
 ## Troubleshooting
 
-1. **Certificate Not Listed**:
-   - Ensure the certificate is installed in the **Personal** store for the **Local Computer**.
-   - The certificate must match the FQDN of the SQL Server.
+1. **Connection Fails**:
+   - Double-check the server address and pre-shared key.
+   - Verify your username and password.
 
-2. **Connection Issues**:
-   - Verify that port 1433 (default SQL Server port) is open on your firewall.
-   - Ensure the SQL Server instance is configured to listen on the correct IP address.
+2. **Authentication Errors**:
+   - Ensure the username and password are correct.
+   - Contact NIC support if credentials are not working.
 
-3. **Certificate Errors**:
-   - Double-check that the certificate's key usage includes **Server Authentication**.
-   - For self-signed certificates, ensure the client trusts the issuing CA.
+3. **VPN Not Listed in Network Settings**:
+   - Restart your system and check again.
+   - Reinstall the NIC VPN client.
+
+4. **Firewall Issues**:
+   - Ensure your firewall or antivirus is not blocking VPN traffic.
+   - Allow the VPN client through the firewall:
+     - Open **Control Panel** → **System and Security** → **Windows Defender Firewall** → **Allow an app or feature through Windows Defender Firewall**.
+     - Add the NIC VPN client to the list of allowed apps.
 
 ---
 
 ## Notes
 
-- Using SSL/TLS ensures secure communication between SSMS and SQL Server, protecting sensitive data from interception.
-- For production environments, always use certificates issued by a trusted CA.
+- Ensure your VPN credentials are kept secure and not shared with unauthorized users.
+- Disconnect from the VPN when not in use to conserve bandwidth and resources.
+
+For further assistance, contact the NIC support team or refer to the official [VPN Resources](https://vpn.nic.in/resources/).
 
 ---
-
-For more details, refer to the official [Microsoft documentation on encryption](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-ver16).
