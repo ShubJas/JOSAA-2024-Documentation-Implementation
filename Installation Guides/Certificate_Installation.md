@@ -1,6 +1,6 @@
 # Installation and Configuration Guide for NIC VPN Client on Windows
 
-This guide provides step-by-step instructions for installing and configuring the NIC VPN client on Windows 8 and Windows 10. For more details, refer to the official [Manual for Configuring VPN Client in Windows 8 & 10](https://vpn.nic.in/resources/manuals/Manual%20for%20Configuring%20VPN%20Client%20in%20Windows%208%20&%2010.pdf).
+This guide provides step-by-step instructions for installing and configuring the NIC VPN client on Windows 8 and Windows 10. For more details, refer to the official [Manual for Configuring VPN Client in Windows ](https://vpn.nic.in/resources/manuals/Manual%20for%20Configuring%20VPN%20Client%20in%20Windows%208%20&%2010.pdf).
 
 ---
 
